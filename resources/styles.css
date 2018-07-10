@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css?family=Indie+Flower");
+@import url("http://fontawesome.io/assets/font-awesome/css/font-awesome.css");
+
+@-webkit-keyframes thumb {
+	0% { -webkit-transform: scale(1); }
+	50% { -webkit-transform: scale(0.9); }
+	100% { -webkit-transform: scale(1); }
+}
+
+@media (max-width: 1366px) {
+	body {
+		font-size: 50%;
+	}
+	.content {
+		width: 300px !important;
+	}
+}
+
+* { 
+	-moz-box-sizing: border-box; 
+	-webkit-box-sizing: border-box; 
+	box-sizing: border-box;
+	margin: -15;
+	padding: 0;
+}
+
+body {
+	font-family: 'Indie Flower', cursive;
+	color: #FFF;
+	text-shadow: 0 0 5px rgba(0,0,0,.5);
+	overflow: hidden;
+}
+
+a {
+	text-decoration: none;
+	color: #FFF;
+}
+
+video {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	min-width: 100%;
+	min-height: 100%;
+	width: auto;
+	height: auto;
+	z-index: -100;
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	transform: translateX(-50%) translateY(-50%);
+}
+
+.content {
+	text-align: center;
+	width: 400px;
+	padding: 50px;
+	position: absolute;
+	right: -10%;
+	top: 70%;
+	transform: translate(-50%, -50%);
+}
+
+.header {
+	text-align: center;
+	width: 400px;
+	padding: 50px;
+	position: absolute;
+	left: 29%;
+	top: 20%;
+	transform: translate(-50%, -50%);
+}
+
+
+.nickname {
+	font-size: 11em;
+	margin-bottom: 50px;
+}
+
+.links-tab {
+	font-size: 1.9em;
+	background: rgba(0,0,0,.10);
+	border-radius: 10px;
+	box-shadow: 0 0 2px #000;
+	padding: -10px;
+	margin-bottom: 50px;
+}
+
+.links {
+	font-size: 1.7em;
+}
+
+.links a {
+	display: block;
+	margin-bottom: 20px;
+}
+
+.thanks {
+	margin-bottom: 50px;
+}
+
+.thanks a {
+	cursor: default;
+	margin-bottom: -8px !important;
+	text-align: right;
+	margin-right: 61px;
+	-webkit-animation-name: none !important;
+}
+
+a:hover {
+	-webkit-animation-name: thumb;
+	-webkit-animation-duration: 200ms;
+	-webkit-transform-origin: 50% 50%;
+	-webkit-animation-iteration-count: 2;
+	-webkit-animation-timing-function: linear;
+}
+
+.footer {
+	width: 300px;
+	position: absolute;
+	left: 15%;
+	top: 60%;
+	bottom: 20;
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+
+.footer .links a {
+	display: inline-block;
+	margin-bottom: 2px;
+}
+
+.footer .links a {
+	margin-right: 33px;
+}
